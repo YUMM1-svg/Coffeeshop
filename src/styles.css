@@ -833,3 +833,118 @@ button:hover {
     padding: 30px 20px;
   }
 }
+
+
+/* 🌿 GLOBAL RESPONSIVE FIXES */
+
+/* Medium Screens (Tablets and small laptops) */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    margin: 8px 0;
+  }
+
+  .hero-overlay h1 {
+    font-size: 36px;
+  }
+
+  .hero-overlay p {
+    font-size: 16px;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 600px) {
+  .hero {
+    height: 70vh;
+    padding: 20px;
+  }
+
+  .hero-overlay {
+    padding: 20px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 28px;
+  }
+
+  .hero-overlay p {
+    font-size: 14px;
+  }
+
+  .section-image {
+    width: 90%;
+  }
+
+  .mission-card,
+  .team-member,
+  .order-card,
+  .login-prompt,
+  .signup-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .menu-title,
+  .order-title {
+    font-size: 1.8rem;
+  }
+
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quantity-controls {
+    margin-top: 10px;
+  }
+
+  .login-card,
+  .signup-card {
+    width: 95%;
+  }
+
+  .login-right,
+  .signup-right {
+    padding: 25px 15px;
+  }
+
+  button,
+  .login-btn,
+  .signup-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .order-container {
+    padding: 20px;
+  }
+}
